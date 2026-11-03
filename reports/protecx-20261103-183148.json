@@ -1,0 +1,5603 @@
+{
+  "host": {
+    "hostname": "Gaming",
+    "os": "Windows 11",
+    "os_version": "10.0.26200",
+    "arch": "AMD64",
+    "user": "PCgaming",
+    "admin": true,
+    "python": "3.14.2"
+  },
+  "started_at": "2026-11-03T18:31:36+01:00",
+  "finished_at": "2026-11-03T18:31:48+01:00",
+  "signatures": {
+    "hashes": 41089,
+    "iocs": 60458,
+    "last_update": "2026-11-03T17:31:06+00:00",
+    "sources": {
+      "malwarebazaar": "2026-11-03T17:31:03+00:00",
+      "threatfox": "2026-11-03T17:31:05+00:00",
+      "feodotracker": "2026-11-03T17:31:06+00:00"
+    }
+  },
+  "counts": {
+    "info": 0,
+    "low": 0,
+    "medium": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "findings": [],
+  "inventory": {
+    "processes": [
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4,
+        "proceso": "System",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": ""
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 368,
+        "proceso": "Registry",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "Registry"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 524,
+        "proceso": "syncthing.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Roaming\\SyncTrayzor\\syncthing.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 628,
+        "proceso": "adb.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 648,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 848,
+        "proceso": "MsMpEng.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MsMpEng.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1132,
+        "proceso": "fontdrvhost.exe",
+        "usuario": "Font Driver Host\\UMFD-0",
+        "ruta": "C:\\Windows\\System32\\fontdrvhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1192,
+        "proceso": "smss.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\smss.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1456,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1604,
+        "proceso": "csrss.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\csrss.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1704,
+        "proceso": "wininit.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\wininit.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1712,
+        "proceso": "csrss.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\csrss.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1796,
+        "proceso": "services.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\services.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1836,
+        "proceso": "winlogon.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\winlogon.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 1844,
+        "proceso": "lsass.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\lsass.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2012,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2044,
+        "proceso": "fontdrvhost.exe",
+        "usuario": "Font Driver Host\\UMFD-1",
+        "ruta": "C:\\Windows\\System32\\fontdrvhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2056,
+        "proceso": "MemCompression",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "MemCompression"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2068,
+        "proceso": "dwm.exe",
+        "usuario": "Window Manager\\DWM-1",
+        "ruta": "C:\\Windows\\System32\\dwm.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2108,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2116,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2192,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2200,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2208,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2216,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2480,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2524,
+        "proceso": "dasHost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\dasHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2604,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2692,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2712,
+        "proceso": "NVDisplay.Container.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_21e6b42b376b80b2\\Display.NvContainer\\NVDisplay.Container.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2732,
+        "proceso": "CefSharp.BrowserSubprocess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\CefSharp.BrowserSubprocess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2852,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2876,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 2896,
+        "proceso": "AsusCertService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\AsusCertService\\1.4.4\\AsusCertService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3108,
+        "proceso": "RazerCortex.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Cortex\\RazerCortex.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3112,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3176,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3288,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3296,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3392,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3396,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3412,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3468,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3480,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3496,
+        "proceso": "WTabletServiceCon.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\Tablet\\Pen\\WTabletServiceCon.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3588,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3828,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3836,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3844,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3888,
+        "proceso": "SearchFilterHost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\SearchFilterHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 3972,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4048,
+        "proceso": "spoolsv.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\spoolsv.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4108,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4160,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4280,
+        "proceso": "AacKingstonDramHal_x64.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\KINGSTON_Aac_DRAM\\AacKingstonDramHal_x64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4296,
+        "proceso": "SearchIndexer.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\SearchIndexer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4436,
+        "proceso": "armsvc.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\armsvc.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4480,
+        "proceso": "atkexComSvc.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\AXSP\\5.00.06\\atkexComSvc.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4488,
+        "proceso": "GameSDK.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\GameSDK Service\\GameSDK.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4504,
+        "proceso": "CortexLauncherService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Cortex\\CortexLauncherService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4512,
+        "proceso": "AsusFanControlService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\AsusFanControlService\\2.05.06\\AsusFanControlService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4532,
+        "proceso": "jhi_service.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\dal.inf_amd64_af50fdb80983f7bc\\jhi_service.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4592,
+        "proceso": "NahimicService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\NahimicService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4600,
+        "proceso": "nvcontainer.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4608,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4632,
+        "proceso": "RzSDKService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzSDKService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4640,
+        "proceso": "GameManagerService3.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\GMS3\\GameManagerService3.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4648,
+        "proceso": "GameManagerService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\GMS\\GameManagerService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4656,
+        "proceso": "sqlwriter.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\Microsoft SQL Server\\90\\Shared\\sqlwriter.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4672,
+        "proceso": "WMIRegistrationService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\mewmiprov.inf_amd64_d51901c26227fb29\\WMIRegistrationService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4720,
+        "proceso": "RtkAudUService64.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_f0e4c606ccf9c120\\RtkAudUService64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4728,
+        "proceso": "RazerCentralService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\RazerCentralService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 4760,
+        "proceso": "RzSDKServer.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzSDKServer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5568,
+        "proceso": "RzAppManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzAppManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5604,
+        "proceso": "RzBTLEManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzBTLEManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5636,
+        "proceso": "RzChromaConnectManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzChromaConnectManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5668,
+        "proceso": "RzChromaConnectServer",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzChromaConnectServer"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5700,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5708,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5716,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5724,
+        "proceso": "RzDeviceManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzDeviceManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5744,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5772,
+        "proceso": "RzDiagnostic",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzDiagnostic"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5788,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5824,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5832,
+        "proceso": "RzIoTDeviceManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzIoTDeviceManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5848,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5864,
+        "proceso": "RzSmartlightingDeviceManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzSmartlightingDeviceManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5884,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5892,
+        "proceso": "RzWDLDeviceManager",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzWDLDeviceManager"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5932,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 5972,
+        "proceso": "conhost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6232,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6568,
+        "proceso": "TextInputHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6672,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6692,
+        "proceso": "Razer Synapse Service Process.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Synapse3\\UserProcess\\Razer Synapse Service Process.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6900,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6908,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 6952,
+        "proceso": "sihost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\sihost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 7040,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 7404,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 7440,
+        "proceso": "WmiPrvSE.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\wbem\\WmiPrvSE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 7648,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 7820,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8128,
+        "proceso": "OneDrive.Sync.Service.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\26.189.0928.0009\\OneDrive.Sync.Service.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8412,
+        "proceso": "MpDefenderCoreService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpDefenderCoreService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8456,
+        "proceso": "extensionCardHal_x86.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\AacExtCard\\extensionCardHal_x86.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8528,
+        "proceso": "Aac3572MbHal_x86.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\AacMB\\Aac3572MbHal_x86.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8656,
+        "proceso": "Aac3572DramHal_x86.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\ASUS_Aac_DRAM\\Aac3572DramHal_x86.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8720,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 8928,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9000,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9056,
+        "proceso": "unsecapp.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\wbem\\unsecapp.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9096,
+        "proceso": "Razer Synapse Service.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Synapse3\\Service\\Razer Synapse Service.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9468,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9616,
+        "proceso": "nvcontainer.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 9752,
+        "proceso": "chrome-native-host.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Packages\\Claude_pzs8sxrjxfjjc\\LocalCache\\Roaming\\Claude-NativeHost\\3.6556.2\\chrome-native-host.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10120,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10540,
+        "proceso": "CefSharp.BrowserSubprocess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\CefSharp.BrowserSubprocess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10624,
+        "proceso": "AacKingstonDramHal_x86.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\KINGSTON_Aac_DRAM\\AacKingstonDramHal_x86.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10732,
+        "proceso": "LightingService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\LightingService\\LightingService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10804,
+        "proceso": "DefenderAiPlatformHost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\DefenderAiPlatformHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10980,
+        "proceso": "NisSrv.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\NisSrv.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 10992,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11272,
+        "proceso": "backgroundTaskHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\backgroundTaskHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11316,
+        "proceso": "NoiseCancelingEngine.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\MBLedSDK\\NoiseCancelingEngine.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11368,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11396,
+        "proceso": "vmcompute.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\vmcompute.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11736,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11820,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11856,
+        "proceso": "nvcontainer.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 11868,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12068,
+        "proceso": "taskhostw.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\taskhostw.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12132,
+        "proceso": "NVDisplay.Container.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_21e6b42b376b80b2\\Display.NvContainer\\NVDisplay.Container.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12148,
+        "proceso": "nvcontainer.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12160,
+        "proceso": "taskhostw.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\taskhostw.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12572,
+        "proceso": "NahimicSvc64.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\NahimicSvc64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12612,
+        "proceso": "explorer.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\explorer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12628,
+        "proceso": "NahimicSvc32.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SysWOW64\\NahimicSvc32.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12644,
+        "proceso": "ShellHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\ShellHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12744,
+        "proceso": "python.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "X:\\project1\\ProtecX\\.venv\\Scripts\\python.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12748,
+        "proceso": "NahimicSvc64.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\NahimicSvc64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 12760,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 13008,
+        "proceso": "CrossDeviceResume.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 13324,
+        "proceso": "NahimicSvc32.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SysWOW64\\NahimicSvc32.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 13400,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 13464,
+        "proceso": "Pen_TouchUser.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Tablet\\Pen\\Pen_TouchUser.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14076,
+        "proceso": "jucheck.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Common Files\\Java\\Java Update\\jucheck.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14484,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14512,
+        "proceso": "nvsphelper64.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\ShadowPlay\\nvsphelper64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14564,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14584,
+        "proceso": "Pen_TabletUser.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Tablet\\Pen\\Pen_TabletUser.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14644,
+        "proceso": "NVIDIA Overlay.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14744,
+        "proceso": "Pen_Tablet.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\Tablet\\Pen\\Pen_Tablet.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14856,
+        "proceso": "WacomHost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\Tablet\\Pen\\WacomHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 14968,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15076,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15356,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15460,
+        "proceso": "SearchHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15484,
+        "proceso": "StartMenuExperienceHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15720,
+        "proceso": "NVIDIA Overlay.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15820,
+        "proceso": "NVIDIA Overlay.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15896,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 15992,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 16196,
+        "proceso": "NVIDIA Overlay.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 16220,
+        "proceso": "CefSharp.BrowserSubprocess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\CefSharp.BrowserSubprocess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 16296,
+        "proceso": "adexmtsv.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\adexmtsv.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 16484,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 16692,
+        "proceso": "NVIDIA Overlay.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17008,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17156,
+        "proceso": "ctfmon.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\ctfmon.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17180,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17276,
+        "proceso": "ArmouryCrate.Service.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.Service.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17300,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17800,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17824,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 17892,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 18052,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 19068,
+        "proceso": "dllhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\dllhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 19240,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 19344,
+        "proceso": "ArmouryCrate.UserSessionHelper.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.UserSessionHelper.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 19664,
+        "proceso": "Razer Central.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\Razer Central.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 19728,
+        "proceso": "CefSharp.BrowserSubprocess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\CefSharp.BrowserSubprocess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20016,
+        "proceso": "ArmouryCrate.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\B9ECED6F.ArmouryCrate_6.7.6.0_x64__qmba6cd70vzyy\\ArmouryCrate.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20188,
+        "proceso": "RtkAudUService64.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_f0e4c606ccf9c120\\RtkAudUService64.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20620,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20640,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\codegraph\\current\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20804,
+        "proceso": "ArmourySwAgent.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\SwAgent\\ArmourySwAgent.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 20964,
+        "proceso": "WmiApSrv.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\wbem\\WmiApSrv.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21004,
+        "proceso": "asusns.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\NhNotifSys\\sonicstudio\\asusns.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21100,
+        "proceso": "Aac3572MbHal_x86.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\ASUS\\AacMB\\Aac3572MbHal_x86.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21392,
+        "proceso": "ROGLiveService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\ASUS\\ROG Live Service\\ROGLiveService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21508,
+        "proceso": "CefSharp.BrowserSubprocess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\CefSharp.BrowserSubprocess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21808,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 21820,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22004,
+        "proceso": "RzChromaStreamServer.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzChromaStreamServer.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22168,
+        "proceso": "Razer Synapse 3.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Razer\\Synapse3\\WPFUI\\Framework\\Razer Synapse 3 Host\\Razer Synapse 3.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22188,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22192,
+        "proceso": "Centinela.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Centinela\\Centinela.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22304,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22792,
+        "proceso": "syncthing.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Roaming\\SyncTrayzor\\syncthing.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22848,
+        "proceso": "SyncTrayzor.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\SyncTrayzor\\SyncTrayzor.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22952,
+        "proceso": "AcPowerNotification.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\AcPowerNotification\\AcPowerNotification.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 22980,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 23016,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 23212,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 23228,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 23376,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24136,
+        "proceso": "WmiPrvSE.exe",
+        "usuario": "NT AUTHORITY\\Servicio de red",
+        "ruta": "C:\\Windows\\System32\\wbem\\WmiPrvSE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24280,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24392,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24564,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24776,
+        "proceso": "jusched.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Common Files\\Java\\Java Update\\jusched.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 24880,
+        "proceso": "ShellExperienceHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 25024,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 25156,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 25856,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 26188,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 26456,
+        "proceso": "SearchFilterHost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\SearchFilterHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 26516,
+        "proceso": "vmwp.exe",
+        "usuario": "NT VIRTUAL MACHINE\\1C62756F-DB56-5914-BF40-05FE42EFFEFA",
+        "ruta": "C:\\Windows\\System32\\vmwp.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 26620,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 27260,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 27264,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 27592,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 27720,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 28460,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 28536,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 28964,
+        "proceso": "cowork-svc.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\resources\\cowork-svc.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 28996,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 29244,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 30128,
+        "proceso": "audiodg.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\audiodg.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 30620,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 30984,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 31112,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 31360,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 31972,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32140,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32148,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32152,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32540,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32608,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 32996,
+        "proceso": "tor.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\TorBrowser\\Tor\\tor.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33144,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33184,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33196,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33436,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33492,
+        "proceso": "agy.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\.gemini\\bin\\agy.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33784,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\codegraph\\current\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 33984,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 34496,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 34644,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 34984,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 35412,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 35616,
+        "proceso": "wslservice.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\WSL\\wslservice.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 35984,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\nodejs\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 35992,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 36660,
+        "proceso": "SecurityHealthService.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\SecurityHealthService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 36956,
+        "proceso": "SearchProtocolHost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\SearchProtocolHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 37164,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 37208,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 37480,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 37736,
+        "proceso": "AdskIdentityManager.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\Autodesk Identity Manager\\AdskIdentityManager.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 37856,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 38020,
+        "proceso": "ApplicationFrameHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\ApplicationFrameHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 38192,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\nodejs\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 38332,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 38528,
+        "proceso": "svchost.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 39644,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40000,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40264,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\codegraph\\current\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40500,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\NODEJS\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40524,
+        "proceso": "ADPClientService.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\ADPClientService.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40672,
+        "proceso": "vmmem",
+        "usuario": "NT VIRTUAL MACHINE\\1C62756F-DB56-5914-BF40-05FE42EFFEFA",
+        "ruta": "vmmem"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 40788,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 41344,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 41824,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42052,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42088,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42164,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42172,
+        "proceso": "LockApp.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\Microsoft.LockApp_cw5n1h2txyewy\\LockApp.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42224,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42400,
+        "proceso": "MidiSrv.exe",
+        "usuario": "NT AUTHORITY\\SERVICIO LOCAL",
+        "ruta": "C:\\Windows\\System32\\MidiSrv.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 42892,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 43108,
+        "proceso": "UserOOBEBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\oobe\\UserOOBEBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 43360,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\nodejs\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 43396,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 43400,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 43740,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44236,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44240,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44308,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44700,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44708,
+        "proceso": "svchost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\svchost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 44748,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 45320,
+        "proceso": "RuntimeBroker.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\RuntimeBroker.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 45600,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 45688,
+        "proceso": "CHXSmartScreen.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\SystemApps\\Microsoft.Windows.AppRep.ChxApp_cw5n1h2txyewy\\CHXSmartScreen.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 46060,
+        "proceso": "agy.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\.gemini\\bin\\agy.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 46160,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 46768,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47020,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\nodejs\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47232,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47284,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47884,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47908,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 47964,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48372,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48388,
+        "proceso": "DataExchangeHost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\DataExchangeHost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48536,
+        "proceso": "DefenderSessionHelper.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\DefenderSessionHelper.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48616,
+        "proceso": "MoNotificationUx.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\UUS\\amd64\\MoNotificationUx.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48628,
+        "proceso": "msedgewebview2.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\155.0.4283.62\\msedgewebview2.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48744,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 48948,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 49324,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 50016,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 50296,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 50344,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 50836,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 51000,
+        "proceso": "Spotify.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.306.1921.0_x64__zpdnekdrzrea0\\Spotify.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 51284,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 51928,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 51940,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 52724,
+        "proceso": "smartscreen.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\smartscreen.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 52776,
+        "proceso": "Fusion360.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\Fusion360.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 53140,
+        "proceso": "FusionLauncher.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\6a0c9611291d45bb9226980209917c3d\\FusionLauncher.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 53460,
+        "proceso": "acrotray.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files (x86)\\Adobe\\Acrobat DC\\Acrobat\\acrotray.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 53492,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 53736,
+        "proceso": "QtWebEngineProcess.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\QtWebEngineProcess.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 53744,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 54376,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 55012,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 55776,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 56124,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 56288,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 56400,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 56772,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 57456,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 57972,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 58260,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 58264,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 59500,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 59524,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 59828,
+        "proceso": "codex-windows-sandbox-service.exe",
+        "usuario": "NT AUTHORITY\\SYSTEM",
+        "ruta": "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1027.3384.0_x64__2p2nqsd0c76g0\\app\\resources\\codex-windows-sandbox-service.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 59840,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 59864,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 60392,
+        "proceso": "firefox.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\Desktop\\Tor Browser\\Browser\\firefox.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 60520,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 60756,
+        "proceso": "node.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\codegraph\\current\\node.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 61044,
+        "proceso": "cmd.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 61140,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 61348,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 61496,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 61648,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62192,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62200,
+        "proceso": "agy.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\.gemini\\bin\\agy.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62320,
+        "proceso": "claude.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\claude.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62500,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62632,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 62828,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 63144,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 63564,
+        "proceso": "chrome.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 63860,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 64004,
+        "proceso": "conhost.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Windows\\System32\\conhost.exe"
+      },
+      {
+        "alerta": "",
+        "motivo": "",
+        "pid": 64504,
+        "proceso": "Antigravity IDE.exe",
+        "usuario": "Gaming\\PCgaming",
+        "ruta": "C:\\Users\\PCgaming\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      }
+    ],
+    "persistence": [
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SecurityHealth",
+        "comando": "%windir%\\system32\\SecurityHealthSystray.exe"
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\AdobeAAMUpdater-1.0",
+        "comando": "\"C:\\Program Files (x86)\\Common Files\\Adobe\\OOBE\\PDApp\\UWA\\UpdaterStartupUtility.exe\""
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\RazerCortex",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Razer Cortex\\RazerCortex.exe\" -autorun"
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\RtkAudUService",
+        "comando": "\"C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_f0e4c606ccf9c120\\RtkAudUService64.exe\" -background"
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Acrobat Assistant 8.0",
+        "comando": "\"C:\\Program Files (x86)\\Adobe\\Acrobat DC\\Acrobat\\Acrotray.exe\""
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SunJavaUpdateSched",
+        "comando": "\"C:\\Program Files (x86)\\Common Files\\Java\\Java Update\\jusched.exe\""
+      },
+      {
+        "tipo": "Run (HKLM)",
+        "ubicacion": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\msedge_cleanup_{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}",
+        "comando": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\156.0.4314.58\\Installer\\setup.exe\" --msedgewebview --delete-old-versions --system-level --verbose-logging --on-logon"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\OneDrive",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe\" /background"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Battle.net",
+        "comando": "\"C:\\Program Files (x86)\\Battle.net\\Battle.net.exe\" --autostarted"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ut",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Roaming\\utorrent\\uTorrent.exe\"  /MINIMIZED"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\EADM",
+        "comando": "\"C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop\\EALauncher.exe\" -silent"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Steam",
+        "comando": "\"C:\\Program Files (x86)\\Steam\\steam.exe\" -silent"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Synapse3",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Synapse3\\WPFUI\\Framework\\Razer Synapse 3 Host\\Razer Synapse 3.exe\" /StartMinimized"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Discord",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Local\\Discord\\Discord.exe\" --processStart Discord.exe --process-start-args \"--start-inactive\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SmartPSS-Lite",
+        "comando": "\"C:\\Program Files\\SmartPSSLite\\SmartPSSLite.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\GoogleChromeAutoLaunch_3ABCA638441EDF6033B6717B4158A0BC",
+        "comando": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --no-startup-window /prefetch:5"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SyncTrayzor",
+        "comando": "\"C:\\Program Files\\SyncTrayzor\\SyncTrayzor.exe\" -minimized"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\OneDrive",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe\" /background"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Battle.net",
+        "comando": "\"C:\\Program Files (x86)\\Battle.net\\Battle.net.exe\" --autostarted"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ut",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Roaming\\utorrent\\uTorrent.exe\"  /MINIMIZED"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\EADM",
+        "comando": "\"C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop\\EALauncher.exe\" -silent"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Steam",
+        "comando": "\"C:\\Program Files (x86)\\Steam\\steam.exe\" -silent"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Synapse3",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Synapse3\\WPFUI\\Framework\\Razer Synapse 3 Host\\Razer Synapse 3.exe\" /StartMinimized"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Discord",
+        "comando": "\"C:\\Users\\PCgaming\\AppData\\Local\\Discord\\Discord.exe\" --processStart Discord.exe --process-start-args \"--start-inactive\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SmartPSS-Lite",
+        "comando": "\"C:\\Program Files\\SmartPSSLite\\SmartPSSLite.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\GoogleChromeAutoLaunch_3ABCA638441EDF6033B6717B4158A0BC",
+        "comando": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --no-startup-window /prefetch:5"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\SyncTrayzor",
+        "comando": "\"C:\\Program Files\\SyncTrayzor\\SyncTrayzor.exe\" -minimized"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\b75426da614240b28394bef43a17be45",
+        "comando": "cmd /C copy /Y \"C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\FusionLauncher.exe\" \"C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\productio"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Delete Cached Update Binary",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c del /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Delete Cached Standalone Update Binary",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c del /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\StandaloneUpdater\\OneDriveSetup.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Uninstall 26.183.0920.0005",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c rmdir /s /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\26.183.0920.0005\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\b75426da614240b28394bef43a17be45",
+        "comando": "cmd /C copy /Y \"C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\production\\a3178fba258560f2be8927680f8ed2f60c752700\\FusionLauncher.exe\" \"C:\\Users\\PCgaming\\AppData\\Local\\Autodesk\\webdeploy\\productio"
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Delete Cached Update Binary",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c del /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\Update\\OneDriveSetup.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Delete Cached Standalone Update Binary",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c del /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\StandaloneUpdater\\OneDriveSetup.exe\""
+      },
+      {
+        "tipo": "Run (HKCU)",
+        "ubicacion": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Uninstall 26.183.0920.0005",
+        "comando": "C:\\WINDOWS\\system32\\cmd.exe /q /c rmdir /s /q \"C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\26.183.0920.0005\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Adobe Acrobat Update Task",
+        "comando": "C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\AdobeARM.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Adobe Acrobat Update Task",
+        "comando": "C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\AdobeARM.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\CreateExplorerShellUnelevatedTask",
+        "comando": "C:\\WINDOWS\\explorer.exe /NoUACCheck"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\MicrosoftEdgeUpdateTaskMachineCore",
+        "comando": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe /c"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\MicrosoftEdgeUpdateTaskMachineCore",
+        "comando": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe /c"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\MicrosoftEdgeUpdateTaskMachineUA",
+        "comando": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe /ua /installsource scheduler"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\NahimicTask32",
+        "comando": "C:\\WINDOWS\\system32\\..\\SysWOW64\\NahimicSvc32.exe $(Arg0) $(Arg1) $(Arg2) $(Arg3) $(Arg4) $(Arg5) $(Arg6) $(Arg7)"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\NahimicTask64",
+        "comando": "C:\\WINDOWS\\system32\\.\\NahimicSvc64.exe $(Arg0) $(Arg1) $(Arg2) $(Arg3) $(Arg4) $(Arg5) $(Arg6) $(Arg7)"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\npcapwatchdog",
+        "comando": "C:\\Program Files\\Npcap\\CheckStatus.bat "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\NVIDIA App SelfUpdate_{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}",
+        "comando": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA App.exe\" \""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\OneDrive Reporting Task-S-1-5-21-3489730569-2526019565-905886060-1001",
+        "comando": "%localappdata%\\Microsoft\\OneDrive\\OneDriveStandaloneUpdater.exe /reporting"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\OneDrive Standalone Update Task-S-1-5-21-3489730569-2526019565-905886060-1001",
+        "comando": "%localappdata%\\Microsoft\\OneDrive\\OneDriveStandaloneUpdater.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\OneDrive Startup Task-S-1-5-21-3489730569-2526019565-905886060-1001",
+        "comando": "C:\\Users\\PCgaming\\AppData\\Local\\Microsoft\\OneDrive\\26.189.0928.0009\\OneDriveLauncher.exe /startInstances"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\RazerCortexScheduleClean",
+        "comando": "C:\\Program Files (x86)\\Razer\\Razer Cortex\\RazerCortex.exe -schtask-1"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\UsbMonitor",
+        "comando": "C:\\Users\\PCgaming\\Downloads\\35inchENG\\35inchENG\\UsbMonitor.exe -auto"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Agent Activation Runtime\\S-1-5-21-3489730569-2526019565-905886060-1001",
+        "comando": "C:\\WINDOWS\\System32\\AgentActivationRuntimeStarter.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\AcPowerNotification",
+        "comando": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\AcPowerNotification\\AcPowerNotification.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\ArmourySocketServer",
+        "comando": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\ArmourySocketServer\\TaskSchedulerTool_ArmourySocketServer.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\ASUSUpdateTaskMachineCore1dd2681984c4f2e",
+        "comando": "C:\\Program Files (x86)\\ASUS\\Update\\AsusUpdate.exe\" /c\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\ASUSUpdateTaskMachineCore1dd2681984c4f2e",
+        "comando": "C:\\Program Files (x86)\\ASUS\\Update\\AsusUpdate.exe\" /c\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\ASUSUpdateTaskMachineUA",
+        "comando": "C:\\Program Files (x86)\\ASUS\\Update\\AsusUpdate.exe\" /ua /installsource scheduler\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\NoiseCancelingEngine",
+        "comando": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\MBLedSDK\\NoiseCancelingEngine.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\ASUS\\P508PowerAgent_sdk",
+        "comando": "C:\\Program Files (x86)\\ASUS\\ArmouryDevice\\dll\\ShareFromArmouryIII\\Mouse\\ROG STRIX CARRY\\P508PowerAgent.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\GoogleSystem\\GoogleUpdater\\GoogleUpdaterTaskSystem157.0.8089.0{863CDB04-FBD8-4680-B148-D5134618B64E}",
+        "comando": "C:\\Program Files (x86)\\Google\\GoogleUpdater\\157.0.8089.0\\updater.exe\" --wake --system\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\GoogleSystem\\GoogleUpdater\\GoogleUpdaterTaskSystem157.0.8089.0{863CDB04-FBD8-4680-B148-D5134618B64E}",
+        "comando": "C:\\Program Files (x86)\\Google\\GoogleUpdater\\157.0.8089.0\\updater.exe\" --wake --system\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\GoogleUserPEH\\RunPlatformExperienceHelper_Daily",
+        "comando": "C:\\Program Files\\Google\\Chrome\\Application\\PlatformExperienceHelper\\platform_experience_helper.exe\" \""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\GoogleUserPEH\\RunPlatformExperienceHelper_Metrics",
+        "comando": "C:\\Program Files\\Google\\Chrome\\Application\\PlatformExperienceHelper\\platform_experience_helper.exe\" --chrome-upload-metrics\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\VisualStudio\\Updates\\BackgroundDownload",
+        "comando": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service\\BackgroundDownload.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 64",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 64 Critical",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\.NET Framework\\.NET Framework NGEN v4.0.30319 Critical",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AccountHealth\\RecoverabilityToastTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Automated)",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Automated)",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\AD RMS Rights Policy Template Management (Manual)",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppID\\EDP Policy Manager",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppID\\EDP Policy Manager",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppID\\PolicyConverter",
+        "comando": "%windir%\\system32\\appidpolicyconverter.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppID\\VerifiedPublisherCertStoreCheck",
+        "comando": "%windir%\\system32\\appidcertstorecheck.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\MareBackup",
+        "comando": "Varias acciones"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser Exp",
+        "comando": "%windir%\\system32\\compattelrunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun express"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\PcaPatchDbTask",
+        "comando": "%windir%\\system32\\rundll32.exe %windir%\\system32\\PcaSvc.dll,PcaPatchSdbTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\SdbinstMergeDbTask",
+        "comando": "%windir%\\system32\\sdbinst.exe -mm"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\SdbinstMergeDbTask",
+        "comando": "%windir%\\system32\\sdbinst.exe -mm"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Application Experience\\StartupAppTask",
+        "comando": "%windir%\\system32\\rundll32.exe Startupscan.dll,SusRunTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ApplicationData\\appuriverifierdaily",
+        "comando": "%windir%\\system32\\AppHostRegistrationVerifier.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ApplicationData\\appuriverifierinstall",
+        "comando": "%windir%\\system32\\AppHostRegistrationVerifier.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ApplicationData\\CleanupTemporaryState",
+        "comando": "%windir%\\system32\\rundll32.exe Windows.Storage.ApplicationData.dll,CleanupTemporaryState"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ApplicationData\\DsSvcCleanup",
+        "comando": "%windir%\\system32\\dstokenclean.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppListBackup\\Backup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppListBackup\\BackupNonMaintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppxDeploymentClient\\Pre-staged app cleanup",
+        "comando": "%windir%\\system32\\rundll32.exe %windir%\\system32\\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\AppxDeploymentClient\\UCPD velocity",
+        "comando": "%windir%\\system32\\UCPDMgr.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Autochk\\Proxy",
+        "comando": "%windir%\\system32\\rundll32.exe /d acproxy.dll,PerformAutochkOperations"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\BitLocker\\BitLocker Encrypt All Drives",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\BitLocker\\BitLocker MDM policy Refresh",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Bluetooth\\UninstallDeviceTask",
+        "comando": "BthUdTask.exe $(Arg0)"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\BrokerInfrastructure\\BgTaskRegistrationMaintenanceTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\capabilityaccessmanager\\maintenancetasks",
+        "comando": "%windir%\\system32\\rundll32.exe %windir%\\system32\\CapabilityAccessManager.dll,CapabilityAccessManagerDoStoreMaintenance"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\AikCertEnrollTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\AikCertEnrollTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\CryptoPolicyTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\KeyPreGenTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\KeyPreGenTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\KeyPreGenTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\KeyPreGenTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\KeyPreGenTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\SystemTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\SystemTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\SystemTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask-Roam",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CertificateServicesClient\\UserTask-Roam",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Chkdsk\\ProactiveScan",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Chkdsk\\SyspartRepair",
+        "comando": "%windir%\\system32\\bcdboot.exe %windir% /sysrepair"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Clip\\License Validation",
+        "comando": "%SystemRoot%\\system32\\ClipUp.exe -p -s -o"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Clip\\LicenseImdsIntegration",
+        "comando": "%SystemRoot%\\system32\\fclip.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Clip\\LicenseImdsIntegration",
+        "comando": "%SystemRoot%\\system32\\fclip.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Clip\\LicenseImdsIntegration",
+        "comando": "%SystemRoot%\\system32\\fclip.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CloudExperienceHost\\CreateObjectTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CloudRestore\\Backup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CloudRestore\\Backup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\CloudRestore\\Restore",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ConsentUX\\UnifiedConsent\\UnifiedConsentSyncTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ConsentUX\\UnifiedConsent\\UnifiedConsentSyncTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Containers\\CmCleanup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+        "comando": "%SystemRoot%\\System32\\wsqmcons.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\UsbCeip",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Check And Scan",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Check And Scan",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Scan",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Data Integrity Scan\\Data Integrity Scan for Crash Recovery",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Defrag\\ScheduledDefrag",
+        "comando": "%windir%\\system32\\defrag.exe -c -h -o -$"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Device Information\\Device",
+        "comando": "%windir%\\system32\\devicecensus.exe SystemCxt"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Device Information\\Device",
+        "comando": "%windir%\\system32\\devicecensus.exe SystemCxt"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Device Information\\Device User",
+        "comando": "%windir%\\system32\\devicecensus.exe UserCxt"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Device Setup\\Driver Recovery on Reboot",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Device Setup\\Metadata Refresh",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\HandleCommand",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\HandleWnsCommand",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\IntegrityCheck",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\LocateCommandUserSession",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceAccountChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceAccountChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceLocationRightsChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDevicePeriodic24",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDevicePolicyChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDevicePolicyChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceProtectionStateChanged",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceSettingChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceSettingChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterDeviceWnsFallback",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterUserDevice",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterUserDevice",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DeviceDirectoryClient\\RegisterUserDevice",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\RecommendedTroubleshootingScanner",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\RecommendedTroubleshootingScanner",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\RecommendedTroubleshootingScanner",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\RecommendedTroubleshootingScanner",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\Scheduled",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Diagnosis\\UnexpectedCodepath",
+        "comando": "%windir%\\system32\\UCConfigTask.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DirectX\\DirectXDatabaseUpdater",
+        "comando": "%windir%\\system32\\directxdatabaseupdater.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DirectX\\DirectXDatabaseUpdater",
+        "comando": "%windir%\\system32\\directxdatabaseupdater.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DirectX\\DXGIAdapterCache",
+        "comando": "%windir%\\system32\\dxgiadaptercache.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DirectX\\DXGIAdapterCache",
+        "comando": "%windir%\\system32\\dxgiadaptercache.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DirectX\\DXGIAdapterCache",
+        "comando": "%windir%\\system32\\dxgiadaptercache.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DiskCleanup\\SilentCleanup",
+        "comando": "%windir%\\system32\\cleanmgr.exe /autocleanstoragesense /d %systemdrive%"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticDataCollector",
+        "comando": "%windir%\\system32\\rundll32.exe dfdts.dll,DfdGetDefaultPolicyAndSMART"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DiskDiagnostic\\Microsoft-Windows-DiskDiagnosticResolver",
+        "comando": "%windir%\\system32\\DFDWiz.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DiskFootprint\\Diagnostics",
+        "comando": "%windir%\\system32\\disksnapshot.exe -z"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DiskFootprint\\StorageSense",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\DUSM\\dusmtask",
+        "comando": "%SystemRoot%\\System32\\dusmtask.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\EDP\\EDP App Launch Task",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\EDP\\EDP Auth Task",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\EDP\\EDP Inaccessible Credentials Task",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\EDP\\StorageCardEncryption Task",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\EnterpriseMgmt\\MDMMaintenenceTask",
+        "comando": "%windir%\\system32\\MDMAgent.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ExploitGuard\\ExploitGuard MDM policy Refresh",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ExploitGuard\\ExploitGuard MDM policy Refresh",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ExploitGuard\\ExploitGuard MDM policy Refresh",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClient",
+        "comando": "%windir%\\system32\\dmclient.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Feedback\\Siuf\\DmClientOnScenarioDownload",
+        "comando": "%windir%\\system32\\dmclient.exe utcwnf"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\File Classification Infrastructure\\Property Definition Sync",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\FileHistory\\File History (maintenance mode)",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\BootstrapUsageDataReporting",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\GovernedFeatureUsageProcessing",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\GovernedFeatureUsageProcessing",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileConfigs",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileFeatures",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileFeatures",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileFeatures",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileFeatures",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\ReconcileFeatures",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\SafeguardsReconciliation",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\UsageDataFlushing",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\UsageDataFlushing",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\UsageDataFlushing",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\UsageDataReceiver",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\UsageDataReporting",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\OneSettings\\RefreshCache",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\OneSettings\\RefreshCache",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\OneSettings\\RefreshCache",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Flighting\\OneSettings\\RefreshCache",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Hotpatch\\Monitoring",
+        "comando": "%systemroot%\\system32\\cmd.exe /d /c %systemroot%\\system32\\hpatchmonTask.cmd"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Hotpatch\\Monitoring",
+        "comando": "%systemroot%\\system32\\cmd.exe /d /c %systemroot%\\system32\\hpatchmonTask.cmd"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Hotpatch\\Monitoring",
+        "comando": "%systemroot%\\system32\\cmd.exe /d /c %systemroot%\\system32\\hpatchmonTask.cmd"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\InputSettingsRestoreDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\LocalUserSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\MouseSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\PenSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\RemoteMouseSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\RemotePenSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\RemoteTouchpadSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\syncpensettings",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\input\\TouchpadSyncDataAvailable",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\RestoreDevice",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\ScanForUpdates",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\ScanForUpdates",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\ScanForUpdates",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\ScanForUpdatesAsUser",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\SmartRetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\WakeUpAndContinueUpdates",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\InstallService\\WakeUpAndScanForUpdates",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\International\\Synchronize Language Settings",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\International\\Synchronize Language Settings",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Kernel\\La57Cleanup",
+        "comando": "%windir%\\system32\\la57setup.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\Installation",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\ReconcileLanguageResources",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\Uninstallation",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\License Manager\\TempSignedLicenseExchange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Location\\Notifications",
+        "comando": "%windir%\\System32\\LocationNotificationWindows.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Location\\WindowsActionDialog",
+        "comando": "%windir%\\System32\\WindowsActionDialog.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Maintenance\\WinSAT",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Autopilot\\DetectHardwareChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Autopilot\\DetectHardwareChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Autopilot\\RemediateHardwareChange",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Provisioning\\Cellular",
+        "comando": "%windir%\\system32\\ProvTool.exe /turn 7 /source CellStateChangeTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Provisioning\\Logon",
+        "comando": "%windir%\\system32\\ProvTool.exe /turn 5 /source LogonIdleTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Provisioning\\MdmDiagnosticsCleanup",
+        "comando": "%windir%\\system32\\MdmDiagnosticsTool.exe /clean"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Provisioning\\Retry",
+        "comando": "%windir%\\system32\\ProvTool.exe /turn 5 /source ProvRetryTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Management\\Provisioning\\RunOnReboot",
+        "comando": "%windir%\\system32\\ProvTool.exe /turn 5 /source ContinueSessionTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Maps\\MapsToastTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Maps\\MapsUpdateTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\AutomaticOfflineMemoryDiagnostic",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\ProcessMemoryDiagnosticEvents",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\ProcessMemoryDiagnosticEvents",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\ProcessMemoryDiagnosticEvents",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\ProcessMemoryDiagnosticEvents",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MemoryDiagnostic\\RunFullMemoryDiagnostic",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MUI\\LPRemove",
+        "comando": "%windir%\\system32\\lpremove.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\MUI\\Mcbuilder",
+        "comando": "C:\\Windows\\System32\\mcbuilder.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Multimedia\\SystemSoundsService",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Network Connectivity Status Indicator\\NcsiIdentifyUserProxies",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Network Connectivity Status Indicator\\NcsiIdentifyUserProxies",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Network Connectivity Status Indicator\\NcsiIdentifyUserProxies",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\NlaSvc\\WiFiTask",
+        "comando": "%SystemRoot%\\System32\\WiFiTask.exe nla"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Offline Files\\Background Synchronization",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Offline Files\\Logon Synchronization",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PCRPF\\PCR Prediction Framework Firmware Update Task",
+        "comando": "%windir%\\system32\\rundll32.exe %windir%\\system32\\pcrpf.dll,NotifyFirmwareUpdateStaged"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PerformanceTrace\\ShowFeedbackToast",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PerformanceTrace\\WhesvcToast",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PI\\Secure-Boot-Update",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PI\\Sqm-Tasks",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Plug and Play\\Device Install Group Policy",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Plug and Play\\Device Install Reboot Required",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Plug and Play\\Device Install Reboot Required",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Plug and Play\\Sysprep Generalize Drivers",
+        "comando": "%SystemRoot%\\System32\\drvinst.exe 6"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Pluton\\Pluton-Ksp-Provisioning",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Power Efficiency Diagnostics\\AnalyzeSystem",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Printing\\EduPrintProv",
+        "comando": "%windir%\\system32\\eduprintprov.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Printing\\PrinterCleanupTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Printing\\PrintJobCleanupTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PushToInstall\\LoginCheck",
+        "comando": "%windir%\\system32\\sc.exe start pushtoinstall login"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PushToInstall\\Registration",
+        "comando": "%windir%\\system32\\sc.exe start pushtoinstall registration"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\PushToInstall\\Registration",
+        "comando": "%windir%\\system32\\sc.exe start pushtoinstall registration"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Ras\\MobilityManager",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\RecoveryEnvironment\\VerifyWinRE",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\ReFsDedupSvc\\Initialization",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Registry\\RegIdleBackup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\RemoteAssistance\\RemoteAssistanceTask",
+        "comando": "%windir%\\system32\\RAServer.exe /offerraupdate"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\RemoteAssistance\\RemoteAssistanceTask",
+        "comando": "%windir%\\system32\\RAServer.exe /offerraupdate"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Servicing\\OOBEFodSetup",
+        "comando": "%windir%\\system32\\OOBEFodSetup.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Servicing\\StartComponentCleanup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Setup\\PITRTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Setup\\PITRTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Setup\\SetupRecoveryDataTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SharedPC\\Account Cleanup",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\CreateObjectTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\FamilySafetyMonitor",
+        "comando": "%windir%\\System32\\wpcmon.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\FamilySafetyRefreshTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\IndexerAutomaticMaintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\ThemeAssetTask_SyncFODState",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\ThemesSyncedImageDownload",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\UpdateUserPictureTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Shell\\UpdateUserPictureTaskContained",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SoftwareProtectionPlatform\\SvcRestartTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SoftwareProtectionPlatform\\SvcRestartTaskLogon",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SoftwareProtectionPlatform\\SvcRestartTaskNetwork",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SoftwareProtectionPlatform\\SvcTrigger",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SpacePort\\SpaceAgentTask",
+        "comando": "%windir%\\system32\\SpaceAgent.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SpacePort\\SpaceAgentTask",
+        "comando": "%windir%\\system32\\SpaceAgent.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SpacePort\\SpaceManagerTask",
+        "comando": "%windir%\\system32\\spaceman.exe /Work"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SpacePort\\SpaceManagerTask",
+        "comando": "%windir%\\system32\\spaceman.exe /Work"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Speech\\SpeechModelDownloadTask",
+        "comando": "%windir%\\system32\\speech_onecore\\common\\SpeechModelDownload.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\StateRepository\\MaintenanceTasks",
+        "comando": "%windir%\\system32\\rundll32.exe %windir%\\system32\\Windows.StateRepositoryClient.dll,StateRepositoryDoMaintenanceTasks"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Storage Tiers Management\\Storage Tiers Management Initialization",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Storage Tiers Management\\Storage Tiers Optimization",
+        "comando": "%windir%\\system32\\defrag.exe -c -h -g -# -m 8 -i 13500"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\EnableLicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe -e"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\EnableLicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe -e"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\EnableLicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe -e"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\LicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\LicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Subscription\\LicenseAcquisition",
+        "comando": "%SystemRoot%\\system32\\ClipRenew.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sustainability\\PowerGridForecastTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sustainability\\PowerGridForecastTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sustainability\\SustainabilityTelemetry",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sysmain\\HybridDriveCachePrepopulate",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sysmain\\HybridDriveCacheRebalance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sysmain\\ResPriStaticDbSync",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Sysmain\\WsSwapAssessmentTask",
+        "comando": "%windir%\\system32\\rundll32.exe sysmain.dll,PfSvWsSwapAssessmentTask"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\SystemRestore\\SR",
+        "comando": "%windir%\\system32\\srtasks.exe ExecuteScheduledSPPCreation"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Task Manager\\Interactive",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TextServicesFramework\\MsCtfMonitor",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Time Synchronization\\ForceSynchronizeTime",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Time Synchronization\\ForceSynchronizeTime",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Time Synchronization\\SynchronizeTime",
+        "comando": "%windir%\\system32\\sc.exe start w32time task_started"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Time Zone\\SynchronizeTimeZone",
+        "comando": "%windir%\\system32\\tzsync.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-HASCertRetr",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-Maintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-Maintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-Maintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-Maintenance",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\TPM\\Tpm-PreAttestationHealthCheck",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Report policies",
+        "comando": "%systemroot%\\system32\\usoclient.exe ReportPolicies"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Report policies",
+        "comando": "%systemroot%\\system32\\usoclient.exe ReportPolicies"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Report policies",
+        "comando": "%systemroot%\\system32\\usoclient.exe ReportPolicies"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Maintenance Work",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartMaintenanceWork"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan Static Task",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan Static Task",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan Static Task",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan Static Task",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Scan Static Task",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Wake To Work",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartWork"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Schedule Work",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartWork"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\Start Oobe Expedite Work",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartWork"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\StartOobeAppsScan",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartOobeAppsScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\StartOobeAppsScan",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartOobeAppsScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\StartOobeAppsScanAfterUpdate",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartOobeAppsScanAfterUpdate"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\StartOobeAppsScan_LicenseAccepted",
+        "comando": "%systemroot%\\system32\\usoclient.exe StartOobeAppsScan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\UIEOrchestrator",
+        "comando": "%systemroot%\\system32\\UIEOrchestratorStub.exe /SendHeartbeat"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\USO_UxBroker",
+        "comando": "%systemroot%\\system32\\MusNotification.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\USO_UxBroker",
+        "comando": "%systemroot%\\system32\\MusNotification.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UpdateOrchestrator\\UUS Failover Task",
+        "comando": "%windir%\\System32\\MLEngineStub.exe HandleUusFailoverEvaluationSignalFromWnf"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UPnP\\UPnPHostConfig",
+        "comando": "sc.exe config upnphost start= auto"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\UsageAndQualityInsights\\UsageAndQualityInsights-MaintenanceTask",
+        "comando": "%SystemRoot%\\System32\\Microsoft.Data.UsageAndQualityInsights.MaintenanceTask.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\USB\\Usb-Notifications",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\USB\\Usb-Notifications",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\USB\\Usb-Notifications",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\USB\\Usb-Notifications",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\User Profile Service\\HiveUploadTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WaaSMedic\\DeferredWork",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WaaSMedic\\MaintenanceWork",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WaaSMedic\\PerformRemediation",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WCM\\WiFiTask",
+        "comando": "%SystemRoot%\\System32\\WiFiTask.exe "
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WDI\\ResolutionHost",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Defender\\Windows Defender Cache Maintenance",
+        "comando": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpCmdRun.exe -IdleTask -TaskName WdCacheMaintenance"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Defender\\Windows Defender Cleanup",
+        "comando": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpCmdRun.exe -IdleTask -TaskName WdCleanup"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Defender\\Windows Defender Scheduled Scan",
+        "comando": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpCmdRun.exe Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Defender\\Windows Defender Verification",
+        "comando": "C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpCmdRun.exe -IdleTask -TaskName WdVerification"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "comando": "%windir%\\system32\\wermgr.exe -upload"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "comando": "%windir%\\system32\\wermgr.exe -upload"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "comando": "%windir%\\system32\\wermgr.exe -upload"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "comando": "%windir%\\system32\\wermgr.exe -upload"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Error Reporting\\QueueReporting",
+        "comando": "%windir%\\system32\\wermgr.exe -upload"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Filtering Platform\\BfeOnServiceStartTypeChange",
+        "comando": "%windir%\\system32\\rundll32.exe bfe.dll,BfeOnServiceStartTypeChange"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Windows Media Sharing\\UpdateLibrary",
+        "comando": "%ProgramFiles%\\Windows Media Player\\wmpnscfg.exe\" \""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\ClickToDo\\ModelCachingIdle",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\ClickToDo\\ModelCachingLimit",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\ClickToDo\\ModelCachingUpdate",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\InitialConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\InitialConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Recall\\PolicyConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Settings\\InitialConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsAI\\Settings\\InitialConfiguration",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsColorSystem\\Calibration Loader",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsColorSystem\\Calibration Loader",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsUpdate\\Refresh Group Policy Cache",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsUpdate\\Scheduled Start",
+        "comando": "%systemroot%\\System32\\sc.exe start wuauserv"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsUpdate\\Scheduled Start",
+        "comando": "%systemroot%\\System32\\sc.exe start wuauserv"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsUpdate\\Scheduled Start",
+        "comando": "%systemroot%\\System32\\sc.exe start wuauserv"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WindowsUpdate\\Scheduled Start",
+        "comando": "%systemroot%\\System32\\sc.exe start wuauserv"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Wininet\\CacheTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WlanSvc\\CDSSync",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WlanSvc\\MoProfileManagement",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WlanSvc\\MoProfileManagement",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WOF\\WIM-Hash-Management",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WOF\\WIM-Hash-Management",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WOF\\WIM-Hash-Validation",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Work Folders\\Work Folders Logon Synchronization",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Work Folders\\Work Folders Maintenance Work",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Workplace Join\\Automatic-Device-Join",
+        "comando": "%SystemRoot%\\System32\\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Workplace Join\\Automatic-Device-Join",
+        "comando": "%SystemRoot%\\System32\\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Workplace Join\\Device-Sync",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Workplace Join\\Recovery-Check",
+        "comando": "%SystemRoot%\\System32\\dsregcmd.exe /checkrecovery"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\Workplace Join\\Recovery-Check",
+        "comando": "%SystemRoot%\\System32\\dsregcmd.exe /checkrecovery"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WwanSvc\\NotificationTask",
+        "comando": "%SystemRoot%\\System32\\WiFiTask.exe wwan"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WwanSvc\\OobeDiscovery",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WwanSvc\\OobeDiscovery",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\Windows\\WwanSvc\\OobeDiscovery",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Microsoft\\XblGameSave\\XblGameSaveTask",
+        "comando": "%windir%\\System32\\XblGameSaveTask.exe standby"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Mozilla\\Firefox Background Update 308046B0AF4A39CB",
+        "comando": "C:\\Program Files\\Mozilla Firefox\\firefox.exe --MOZ_LOG sync,prependheader,timestamp,append,maxsize:1,Dump:5 --MOZ_LOG_FILE C:\\ProgramData\\Mozilla-1de4eec8-1241-4177-a864-e594e8d1fb38\\updates\\308046B0A"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Mozilla\\Firefox Background Update S-1-5-21-3489730569-2526019565-905886060-1001 308046B0AF4A39CB",
+        "comando": "C:\\Program Files\\Mozilla Firefox\\firefox.exe --MOZ_LOG sync,prependheader,timestamp,append,maxsize:1,Dump:5 --MOZ_LOG_FILE C:\\ProgramData\\Mozilla-1de4eec8-1241-4177-a864-e594e8d1fb38\\updates\\308046B0A"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\Mozilla\\Firefox Default Browser Agent 308046B0AF4A39CB",
+        "comando": "C:\\Program Files\\Mozilla Firefox\\default-browser-agent.exe do-task 308046B0AF4A39CB\"\""
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\SoftLanding\\S-1-5-21-3489730569-2526019565-905886060-1001\\SoftLandingCreativeManagementTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\SoftLanding\\S-1-5-21-3489730569-2526019565-905886060-1001\\SoftLandingCreativeManagementTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\SoftLanding\\S-1-5-21-3489730569-2526019565-905886060-1001\\SoftLandingCreativeManagementTask",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Tarea programada",
+        "ubicacion": "\\SoftLanding\\S-1-5-21-3489730569-2526019565-905886060-1001\\SoftLandingRefreshForExpirationTask-{68e80b1b-1ba6-461f-b702-c3497487cd4f}",
+        "comando": "Controlador COM"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AdobeARMservice",
+        "comando": "\"C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\armsvc.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AppXSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k wsappx -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "ArmouryCrateService",
+        "comando": "\"C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.Service.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "asComSvc",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\AXSP\\5.00.06\\atkexComSvc.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "asus",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\Update\\AsusUpdate.exe\" /svc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AsusCertService",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\AsusCertService\\1.4.5\\AsusCertService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AsusFanControlService",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\AsusFanControlService\\2.05.06\\AsusFanControlService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AsusROGLSLService",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\AsusROGLSLService\\AsusROGLSLService.exe\" -runservice"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "AudioEndpointBuilder",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Audiosrv",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "BFE",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNoNetworkFirewall -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "BITS",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "BrokerInfrastructure",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "camsvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k osprivacy -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CDPSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CoreMessagingRegistrar",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNoNetwork -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CortexLauncherService",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Razer Cortex\\CortexLauncherService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CryptSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k NetworkService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "DcomLaunch",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "debugregsvc",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k DevToolsGroup"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "DeviceAssociationService",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Dhcp",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "DispBrokerDesktopSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Dnscache",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k NetworkService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "DPS",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNoNetwork -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "DusmSvc",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p -s DusmSvc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "edgeupdate",
+        "comando": "\"C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\MicrosoftEdgeUpdate.exe\" /svc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "EventLog",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "EventSystem",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceRedirectionGuard -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "FontCache",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "GameSDK Service",
+        "comando": "\"C:\\Program Files (x86)\\ASUS\\GameSDK Service\\GameSDK.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "GoogleUpdaterInternalService157.0.8089.0",
+        "comando": "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\157.0.8089.0\\updater.exe\" --system --windows-service --service=update-internal"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "GoogleUpdaterService157.0.8089.0",
+        "comando": "\"C:\\Program Files (x86)\\Google\\GoogleUpdater\\157.0.8089.0\\updater.exe\" --system --windows-service --service=update"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "gpsvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k GPSvcGroup"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "gupdate",
+        "comando": "\"C:\\Program Files (x86)\\Google\\Update\\GoogleUpdate.exe\" /svc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Intel(R) Platform License Manager Service",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\iclsclient.inf_amd64_fc84dfa25a6a7727\\lib\\PlatformLicenseManagerService.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Intel(R) TPM Provisioning Service",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\iclsclient.inf_amd64_fc84dfa25a6a7727\\lib\\TPMProvisioningService.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "InventorySvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k InvSvcGroup -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "iphlpsvc",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k NetSvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "jhi_service",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\dal.inf_amd64_af50fdb80983f7bc\\jhi_service.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "LanmanServer",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "LanmanWorkstation",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k NetworkService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "LightingService",
+        "comando": "\"C:\\Program Files (x86)\\LightingService\\LightingService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "lmhosts",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "LSM",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "MDCoreSvc",
+        "comando": "\"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MpDefenderCoreService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "mpssvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNoNetworkFirewall -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "NahimicService",
+        "comando": "\"C:\\WINDOWS\\system32\\NahimicService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "nsi",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "NvContainerLocalSystem",
+        "comando": "\"C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe\" -s NvContainerLocalSystem -a -f \"C:\\ProgramData\\NVIDIA Corporation\\NVIDIA App\\NvContainer\\NvContainerLocalSystem.log\" -l 3 -d \"C:\\Prog"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "NVDisplay.ContainerLocalSystem",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\nvmdi.inf_amd64_21e6b42b376b80b2\\Display.NvContainer\\NVDisplay.Container.exe -arg <ExeDir>\\arguments.txt"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "PcaSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Power",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "ProfSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k UserProfileService -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Chroma SDK Server",
+        "comando": "\"C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzSDKServer.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Chroma SDK Service",
+        "comando": "\"C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzSDKService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Chroma Stream Server",
+        "comando": "\"C:\\Program Files (x86)\\Razer Chroma SDK\\bin\\RzChromaStreamServer.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Game Manager Service",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Razer Services\\GMS\\GameManagerService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Game Manager Service 3",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Razer Services\\GMS3\\GameManagerService3.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Razer Synapse Service",
+        "comando": "\"C:\\Program Files (x86)\\Razer\\Synapse3\\Service\\Razer Synapse Service.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "RpcEptMapper",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k RPCSS -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "RpcSs",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k rpcss -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "RtkAudioUniversalService",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_f0e4c606ccf9c120\\RtkAudUService64.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "RzActionSvc",
+        "comando": "C:\\Program Files (x86)\\Razer\\Razer Services\\Razer Central\\RazerCentralService.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "SamSs",
+        "comando": "C:\\WINDOWS\\system32\\lsass.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Schedule",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "SENS",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcsRedirectionGuard -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "ShellHWDetection",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Spooler",
+        "comando": "C:\\WINDOWS\\System32\\spoolsv.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "sppsvc",
+        "comando": "C:\\WINDOWS\\system32\\sppsvc.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "SQLWriter",
+        "comando": "\"C:\\Program Files\\Microsoft SQL Server\\90\\Shared\\sqlwriter.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "StateRepository",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k appmodel -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "StiSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k imgsvc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "SysMain",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "SystemEventsBroker",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "TextInputManagementService",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Themes",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "TrkWks",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "UserManager",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "UsoSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "W32Time",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalService"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Wcmsvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p -s Wcmsvc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "whesvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k whesvc -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WinDefend",
+        "comando": "\"C:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.26100.4-0\\MsMpEng.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "Winmgmt",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WlanSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -p -s Wlansvc"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WMIRegistrationService",
+        "comando": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\mewmiprov.inf_amd64_d51901c26227fb29\\WMIRegistrationService.exe"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WpnService",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WSAIFabricSvc",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k WSAIFabricSvcGroup -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "wscsvc",
+        "comando": "C:\\WINDOWS\\System32\\svchost.exe -k LocalServiceNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WSearch",
+        "comando": "C:\\WINDOWS\\system32\\SearchIndexer.exe /Embedding"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WTabletServiceCon",
+        "comando": "\"C:\\Program Files\\Tablet\\Pen\\WTabletServiceCon.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "cbdhsvc_135326",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k ClipboardSvcGroup -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CDPUserSvc_135326",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k UnistackSvcGroup"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "webthreatdefusersvc_135326",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k LocalSystemNetworkRestricted -p"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WpnUserService_135326",
+        "comando": "C:\\WINDOWS\\system32\\svchost.exe -k UnistackSvcGroup"
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "ROG Live Service",
+        "comando": "\"C:\\Program Files\\ASUS\\ROG Live Service\\ROGLiveService.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "WSLService",
+        "comando": "\"C:\\Program Files\\WSL\\wslservice.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CoworkVMService",
+        "comando": "\"C:\\Program Files\\WindowsApps\\Claude_4.4212.0.0_x64__pzs8sxrjxfjjc\\app\\resources\\cowork-svc.exe\""
+      },
+      {
+        "tipo": "Servicio",
+        "ubicacion": "CodexSandboxService.OpenAI.Codex",
+        "comando": "\"C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1027.3384.0_x64__2p2nqsd0c76g0\\app\\resources\\codex-windows-sandbox-service.exe\""
+      }
+    ]
+  },
+  "warnings": [
+    "regla YARA descartada (apt_apt17_mal_sep17.yar): C:\\Users\\PCgaming\\AppData\\Local\\protecx\\yara-rules\\apt_apt17_mal_sep17.yar(74): invalid field name \"number_of_signatures\"",
+    "regla YARA descartada (apt_apt27_hyperbro.yar): C:\\Users\\PCgaming\\AppData\\Local\\protecx\\yara-rules\\apt_apt27_hyperbro.yar(30): invalid field name \"number_of_signatures\"",
+    "regla YARA descartada (apt_apt41.yar): C:\\Users\\PCgaming\\AppData\\Local\\protecx\\yara-rules\\apt_apt41.yar(212): invalid field name \"number_of_signatures\"",
+    "regla YARA descartada (apt_babyshark.yar): C:\\Users\\PCgaming\\AppData\\Local\\protecx\\yara-rules\\apt_babyshark.yar(22): invalid field name \"number_of_signatures\"",
+    "regla YARA descartada (apt_turla_gazer.yar): C:\\Users\\PCgaming\\AppData\\Local\\protecx\\yara-rules\\apt_turla_gazer.yar(20): invalid field name \"number_of_signatures\"",
+    "…y 10 reglas YARA más descartadas por errores de sintaxis."
+  ],
+  "stats": {
+    "processes": {
+      "procesos_analizados": 364,
+      "segundos": 7.1
+    },
+    "persistence": {
+      "entradas_de_arranque": 526,
+      "segundos": 3.8
+    }
+  },
+  "comparison": {
+    "previous": "2026-10-29T20:46:46+01:00",
+    "new": 0,
+    "unchanged": 0,
+    "resolved": []
+  }
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protecx"
+version = "0.1.0"
+description = "Escáner defensivo multiplataforma: malware, procesos, red y persistencia"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["psutil>=5.9"]
+
+[project.optional-dependencies]
+# Motor de reglas YARA (muy recomendado: sin él solo se usan hashes e IOCs)
+yara = ["yara-python>=4.3"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+protecx = "protecx.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["protecx*"]
+
+[tool.setuptools.package-data]
+protecx = ["rules/*.yar", "reporting/report_template.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

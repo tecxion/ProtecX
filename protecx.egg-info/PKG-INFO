@@ -1,0 +1,84 @@
+Metadata-Version: 2.4
+Name: protecx
+Version: 0.1.0
+Summary: Escáner defensivo multiplataforma: malware, procesos, red y persistencia
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: psutil>=5.9
+Provides-Extra: yara
+Requires-Dist: yara-python>=4.3; extra == "yara"
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+
+# ProtecX
+
+Escáner defensivo y de **solo lectura** para Windows, macOS y Linux. No borra ni
+modifica nada: genera un informe (HTML + JSON) con lo que encuentra.
+
+## Qué analiza
+
+| Módulo | Comprueba |
+|---|---|
+| `processes` | Hash de cada binario en ejecución, suplantación de procesos del sistema (`svchost.exe` fuera de System32), ejecución desde `/tmp`, memoria anónima (`memfd`) o binario borrado, líneas de comandos de ataque (reverse shells, PowerShell codificado), YARA sobre memoria (opcional) |
+| `network` | Puertos en escucha y conexiones con su proceso, IPs/dominios de C2 conocidos, puertos típicos de backdoors, shells con conexión externa, programas en carpetas temporales hablando con Internet, *beaconing* (`--monitor`), caché DNS (Windows), modo promiscuo (Linux) |
+| `persistence` | Claves Run/Winlogon/IFEO, tareas programadas, servicios y carpeta Inicio (Windows); cron, systemd, `rc.local`, `ld.so.preload`, perfiles de shell, claves SSH, cuentas UID 0 (Linux/macOS); LaunchAgents/Daemons (macOS) |
+| `files` | Hash + reglas YARA de ejecutables y scripts, doble extensión (`factura.pdf.exe`), ejecutables ocultos en carpetas temporales, contenido de scripts, ClamAV opcional |
+| `system` | Archivo `hosts` (dominios maliciosos o de seguridad bloqueados), Defender desactivado por directiva |
+
+## Instalación y uso
+
+```bash
+pip install -e .[yara]          # yara-python es opcional pero muy recomendable
+
+export ABUSE_CH_AUTH_KEY=...    # clave gratuita: https://auth.abuse.ch
+protecx update                  # descarga firmas (repítelo a diario)
+protecx scan                    # análisis rápido (zonas de riesgo)
+sudo protecx scan --full        # todo el disco, con privilegios
+protecx scan --only network processes --monitor 60
+protecx scan --path ~/Descargas --format json
+protecx status
+```
+
+Ejecútalo con privilegios de administrador/root para ver todos los procesos y sockets.
+Programar `protecx update` en cron / Programador de tareas mantiene las firmas al día.
+Código de salida de `scan`: `0` limpio, `1` hallazgos medios/altos, `2` críticos.
+
+## Fuentes de firmas
+
+| Fuente | Aporta | Notas |
+|---|---|---|
+| MalwareBazaar (abuse.ch) | Hashes SHA-256 recientes | Requiere clave gratuita |
+| ThreatFox (abuse.ch) | IPs, dominios y hashes con su familia | Requiere clave; abuse.ch caduca los IOC con más de 6 meses |
+| URLhaus (abuse.ch) | Hosts de distribución de malware | |
+| Feodo Tracker (abuse.ch) | IPs de C2 de botnets | |
+| Neo23x0/signature-base | Reglas YARA | Licencia DRL 1.1: respeta la atribución |
+| ClamAV | Motor y bases propias | Opcional (`--clamav`); se actualiza con `freshclam`, no con descargas directas |
+
+Cada fuente se reemplaza entera al actualizar, y una fuente caída no borra los datos anteriores.
+
+## Estructura
+
+```
+protecx/
+  cli.py  engine.py  context.py  models.py  config.py  utils.py
+  heuristics.py            reglas de comportamiento compartidas
+  signatures/              store (SQLite), updater, parsers, yara_engine, clamav
+  scanners/                system, processes, network, persistence, files (+ inspector)
+  collectors/autostart.py  enumera persistencia por sistema operativo
+  reporting/               consola, JSON y plantilla HTML autocontenida
+tests/                     pytest
+```
+
+Para añadir un módulo: crea una subclase de `Scanner` en `scanners/`, regístrala en
+`scanners/__init__.py` y añade su nombre a `SCANNER_ORDER` en `context.py`.
+
+## Límites (léelos)
+
+- **No es un antivirus residente**: es un análisis puntual. No protege en tiempo real.
+- Compara con listas públicas y heurísticas: un malware nuevo o propio no aparecerá.
+  Sin hallazgos no significa limpio.
+- Las heurísticas dan falsos positivos (herramientas de administración, instaladores,
+  Tor, etc.). Los hallazgos son indicios que hay que verificar, no sentencias.
+- No detecta rootkits de kernel ni malware que oculte sus procesos al sistema.
+- No usa Auth-Key en URLs de terceros: solo se envía a hosts `*.abuse.ch`.
+- Usa la herramienta solo en equipos propios o con autorización.

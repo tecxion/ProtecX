@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Informe ProtecX</title>
+<!--
+  Informe autocontenido: sin fuentes, scripts ni imágenes externas, para que
+  abrirlo no envíe nada a terceros. Los datos van como JSON y se pintan con
+  textContent (nunca innerHTML), de modo que el contenido de un malware
+  (nombres de proceso, líneas de comandos) no puede inyectar HTML.
+-->
+<style>
+  :root {
+    --paper: #EDF0F3; --panel: #FFFFFF; --ink: #16202A; --muted: #566472; --line: #D3DAE1;
+    --accent: #0B5C6B; --ok: #2E7D4F;
+    --critical: #A4161A; --high: #C2410C; --medium: #A16207; --low: #1D5FA8; --info: #5B6B7B;
+    --on-seg: #FFFFFF;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0F151B; --panel: #17202A; --ink: #E6EBF0; --muted: #94A2B0; --line: #2A3642;
+      --accent: #5CC0D1; --ok: #4FA876;
+      --critical: #FF7B7B; --high: #FF9A55; --medium: #E8BC45; --low: #72AEEB; --info: #8E9DAC;
+      --on-seg: #0F151B;
+      color-scheme: dark;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 16px/1.55 system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  }
+  main { max-width: 62rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1, h2, h3 { line-height: 1.2; letter-spacing: -0.01em; margin: 0; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Cabecera */
+  .head h1 { font-size: 1.1rem; font-weight: 600; color: var(--muted); }
+  .host { display: flex; flex-wrap: wrap; gap: 0.25rem 2rem; margin: 0.75rem 0 0; }
+  .host div { min-width: 7rem; }
+  .host dt { font-size: 0.8rem; color: var(--muted); }
+  .host dd { margin: 0; font-size: 0.95rem; overflow-wrap: anywhere; }
+
+  /* Veredicto: lo primero y lo más grande */
+  .verdict { margin: 2.25rem 0 2rem; }
+  .verdict h2 { font-size: clamp(1.75rem, 4.2vw, 2.75rem); font-weight: 700; letter-spacing: -0.025em; max-width: 24ch; }
+  .verdict p { margin: 0.6rem 0 0; color: var(--muted); max-width: 60ch; }
+  .bar { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 1.5rem; }
+  .seg, .seg-ok {
+    flex: var(--n, 1) 1 auto; min-width: 6.5rem; padding: 0.55rem 0.85rem;
+    border: 0; border-radius: 4px; background: var(--c); color: var(--on-seg);
+    font: inherit; font-weight: 600; text-align: left;
+  }
+  .seg { cursor: pointer; }
+  .seg[aria-pressed="false"] { opacity: 0.45; }
+  .seg-ok { --c: var(--ok); --on-seg: #fff; flex-basis: 100%; cursor: default; }
+  .seg b { font-variant-numeric: tabular-nums; margin-left: 0.4rem; }
+
+  /* Lista de hallazgos */
+  .findings { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+  .finding {
+    background: var(--panel); border-left: 4px solid var(--c); border-radius: 0 6px 6px 0;
+    padding: 0.85rem 1rem;
+  }
+  .finding[hidden] { display: none; }
+  .finding .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 0.75rem; }
+  .finding .sev { color: var(--c); font-weight: 700; font-size: 0.9rem; }
+  .finding h3 { font-size: 1rem; font-weight: 600; overflow-wrap: anywhere; }
+  .finding .src { margin-left: auto; font-size: 0.85rem; color: var(--muted); }
+  .finding p { margin: 0.35rem 0 0; color: var(--muted); max-width: 70ch; }
+  .finding details { margin-top: 0.5rem; }
+  summary { cursor: pointer; font-size: 0.9rem; color: var(--accent); }
+  .evidence { display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 1rem; margin: 0.6rem 0 0; font-size: 0.85rem; }
+  .evidence dt { color: var(--muted); }
+  .evidence dd { margin: 0; font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+  .rec { color: var(--ink) !important; font-size: 0.92rem; }
+  .none { color: var(--muted); padding: 1rem 0; }
+
+  /* Secciones secundarias */
+  section.block { margin-top: 2.5rem; }
+  section.block > h2 { font-size: 1.15rem; margin-bottom: 0.75rem; }
+  .warns { margin: 0; padding-left: 1.2rem; max-width: 70ch; }
+  .warns li { margin: 0.25rem 0; }
+  .inv { background: var(--panel); border-radius: 6px; margin-bottom: 0.5rem; padding: 0.7rem 1rem; }
+  .inv summary { color: var(--ink); font-weight: 600; font-size: 1rem; }
+  .inv summary span { color: var(--muted); font-weight: 400; margin-left: 0.5rem; }
+  .scroll { overflow-x: auto; margin-top: 0.6rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.82rem; }
+  th, td { text-align: left; padding: 0.3rem 0.75rem 0.3rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td { font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+  th { font-weight: 600; color: var(--muted); white-space: nowrap; }
+  .note { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; max-width: 70ch; }
+
+  @media print {
+    body { background: #fff; }
+    .seg { opacity: 1 !important; }
+  }
+</style>
+</head>
+<body>
+<main id="app">
+  <noscript>Este informe necesita JavaScript para mostrarse. Los mismos datos están en el archivo JSON.</noscript>
+</main>
+
+<script type="application/json" id="data">{"host": {"hostname": "vm", "os": "Linux 6.18.44-fc-v185", "os_version": "#1 SMP PREEMPT_DYNAMIC @0", "arch": "x86_64", "user": "root", "admin": true, "python": "3.13.18"}, "started_at": "2026-10-29T18:06:43+01:00", "finished_at": "2026-10-29T18:06:47+01:00", "signatures": {"hashes": 1, "iocs": 0, "last_update": null, "sources": {}}, "counts": {"info": 0, "low": 0, "medium": 1, "high": 6, "critical": 3}, "findings": [{"scanner": "files", "severity": "critical", "severity_label": "Crítico", "title": "Malware conocido: EICAR-Test-File", "detail": "El hash SHA-256 coincide con una muestra catalogada.", "evidence": {"ruta": "/tmp/demo/factura.pdf.exe", "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f", "familia": "EICAR-Test-File", "fuente": "builtin"}, "recommendation": "Aísla el equipo de la red, conserva el archivo para análisis y elimínalo desde un entorno de confianza."}, {"scanner": "files", "severity": "critical", "severity_label": "Crítico", "title": "Regla YARA «EICAR_Test_File»", "detail": "Fichero de prueba estándar EICAR (inofensivo)", "evidence": {"ruta": "/tmp/demo/factura.pdf.exe", "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f", "regla": "EICAR_Test_File", "puntuacion": 100}, "recommendation": "Revisa el archivo con un segundo motor (por ejemplo VirusTotal). Las reglas genéricas pueden dar falsos positivos."}, {"scanner": "processes", "severity": "critical", "severity_label": "Crítico", "title": "Línea de comandos sospechosa: Reverse shell de bash (/dev/tcp)", "detail": "El proceso se lanzó con argumentos típicos de un ataque.", "evidence": {"pid": 527, "nombre": "bash", "ruta": "/usr/bin/bash", "usuario": "root", "comando": "/bin/bash -c source /root/.claude/shell-snapshots/snapshot-bash-1793292972427-jd94wm.sh 2>/dev/null || true && \\builtin export BUN_OPTIONS=\"--smol${BUN_OPTIONS:+ $BUN_OPTIONS}\" && shopt -u extglob 2>/dev/null || true && { \\builtin unalias -- 'unsetenv'; \\builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && { { \\builtin echo 0 >| /sys/fs/cgroup/cpuacct/process_api/01a18896-f60c-7757-849f-2e776a6adce1/cc-shell/tasks; } 2>/dev/null || :; } && eval 'export PROTECX_HOME=$(mktemp -d) && mkdir "}, "recommendation": "Revisa quién lo inició (proceso padre) y finalízalo si no lo reconoces."}, {"scanner": "files", "severity": "high", "severity_label": "Alto", "title": "Doble extensión engañosa", "detail": "El nombre simula un documento, pero es ejecutable.", "evidence": {"ruta": "/tmp/demo/factura.pdf.exe"}, "recommendation": "No lo abras. Compruébalo con un segundo motor antes de borrarlo."}, {"scanner": "files", "severity": "high", "severity_label": "Alto", "title": "Regla YARA «Reverse_Shell_Script»", "detail": "Script con reverse shell de bash", "evidence": {"ruta": "/tmp/demo/rs.sh", "sha256": "7836de286e933b08a16bcc52d3c9bf4598221ad5877195165a68714c12a591c2", "regla": "Reverse_Shell_Script", "puntuacion": 80}, "recommendation": "Revisa el archivo con un segundo motor (por ejemplo VirusTotal). Las reglas genéricas pueden dar falsos positivos."}, {"scanner": "files", "severity": "high", "severity_label": "Alto", "title": "Script sospechoso: Redirección a /dev/tcp (típica de reverse shell)", "detail": "Patrón de comandos habitual en malware o administración maliciosa.", "evidence": {"ruta": "/tmp/demo/rs.sh"}, "recommendation": "Revisa el contenido del script antes de ejecutarlo."}, {"scanner": "files", "severity": "high", "severity_label": "Alto", "title": "Script sospechoso: Reverse shell de bash (/dev/tcp)", "detail": "Patrón de comandos habitual en malware o administración maliciosa.", "evidence": {"ruta": "/tmp/demo/rs.sh"}, "recommendation": "Revisa el contenido del script antes de ejecutarlo."}, {"scanner": "processes", "severity": "high", "severity_label": "Alto", "title": "Línea de comandos sospechosa: Redirección a /dev/tcp (típica de reverse shell)", "detail": "El proceso se lanzó con argumentos típicos de un ataque.", "evidence": {"pid": 527, "nombre": "bash", "ruta": "/usr/bin/bash", "usuario": "root", "comando": "/bin/bash -c source /root/.claude/shell-snapshots/snapshot-bash-1793292972427-jd94wm.sh 2>/dev/null || true && \\builtin export BUN_OPTIONS=\"--smol${BUN_OPTIONS:+ $BUN_OPTIONS}\" && shopt -u extglob 2>/dev/null || true && { \\builtin unalias -- 'unsetenv'; \\builtin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && { { \\builtin echo 0 >| /sys/fs/cgroup/cpuacct/process_api/01a18896-f60c-7757-849f-2e776a6adce1/cc-shell/tasks; } 2>/dev/null || :; } && eval 'export PROTECX_HOME=$(mktemp -d) && mkdir "}, "recommendation": "Revisa quién lo inició (proceso padre) y finalízalo si no lo reconoces."}, {"scanner": "processes", "severity": "high", "severity_label": "Alto", "title": "Proceso ejecutándose desde memoria anónima (memfd)", "detail": "Técnica 'fileless': el programa nunca toca el disco.", "evidence": {"pid": 68, "nombre": "6", "ruta": "/memfd:sbx-telemetry-collector", "usuario": "64321", "comando": "sbx-telemetry-collector"}, "recommendation": "Investiga el proceso y su proceso padre."}, {"scanner": "network", "severity": "medium", "severity_label": "Medio", "title": "Conexiones repetidas al mismo destino (posible beaconing)", "detail": "9 conexiones nuevas a 160.79.104.10:443 en 3 s.", "evidence": {"pid": 73, "proceso": "claude", "remoto": "160.79.104.10:443"}, "recommendation": "Normal en navegadores o sincronización; sospechoso en procesos desconocidos."}], "inventory": {"listening": [{"protocolo": "tcp", "local": "0.0.0.0:2024", "remoto": "", "puerto": 2024, "estado": "LISTEN", "pid": null, "proceso": "", "ruta": ""}, {"protocolo": "tcp", "local": "127.0.0.1:40081", "remoto": "", "puerto": 40081, "estado": "LISTEN", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "127.0.0.1:40837", "remoto": "", "puerto": 40837, "estado": "LISTEN", "pid": 163, "proceso": "environment-manager", "ruta": "/opt/env-runner/environment-manager"}], "connections": [{"protocolo": "tcp", "local": "192.0.2.2:50718", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "127.0.0.1:39058", "remoto": "127.0.0.1:40081", "puerto": 40081, "estado": "TIME_WAIT", "pid": null, "proceso": "", "ruta": ""}, {"protocolo": "tcp", "local": "127.0.0.1:39062", "remoto": "127.0.0.1:40081", "puerto": 40081, "estado": "TIME_WAIT", "pid": null, "proceso": "", "ruta": ""}, {"protocolo": "tcp", "local": "192.0.2.2:46490", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:50762", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:50570", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 163, "proceso": "environment-manager", "ruta": "/opt/env-runner/environment-manager"}, {"protocolo": "tcp", "local": "192.0.2.2:46460", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "127.0.0.1:39042", "remoto": "127.0.0.1:40081", "puerto": 40081, "estado": "TIME_WAIT", "pid": null, "proceso": "", "ruta": ""}, {"protocolo": "tcp", "local": "192.0.2.2:44450", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:50598", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:50864", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:41080", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "192.0.2.2:33608", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 73, "proceso": "claude", "ruta": "/opt/claude-code/bin/claude"}, {"protocolo": "tcp", "local": "127.0.0.1:39048", "remoto": "127.0.0.1:40081", "puerto": 40081, "estado": "TIME_WAIT", "pid": null, "proceso": "", "ruta": ""}, {"protocolo": "tcp", "local": "192.0.2.2:50852", "remoto": "160.79.104.10:443", "puerto": 443, "estado": "ESTABLISHED", "pid": 163, "proceso": "environment-manager", "ruta": "/opt/env-runner/environment-manager"}], "persistence": [{"tipo": "cron", "ubicacion": "/etc/cron.d/php", "comando": "09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi"}, {"tipo": "cron", "ubicacion": "/etc/cron.d/e2scrub_all", "comando": "30 3 * * 0 root test -e /run/systemd/system || SERVICE_MODE=1 /usr/lib/x86_64-linux-gnu/e2fsprogs/e2scrub_all_cron"}, {"tipo": "cron", "ubicacion": "/etc/cron.d/e2scrub_all", "comando": "10 3 * * * root test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile", "comando": "/etc/profile"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/bash.bashrc", "comando": "/etc/bash.bashrc"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/zshrc", "comando": "/etc/zshrc"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/01-locale-fix.sh", "comando": "/etc/profile.d/01-locale-fix.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/bun.sh", "comando": "/etc/profile.d/bun.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/ccr-agent-proxy-ca.sh", "comando": "/etc/profile.d/ccr-agent-proxy-ca.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/debuginfod.sh", "comando": "/etc/profile.d/debuginfod.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/gradle.sh", "comando": "/etc/profile.d/gradle.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/java.sh", "comando": "/etc/profile.d/java.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/maven.sh", "comando": "/etc/profile.d/maven.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/nix.sh", "comando": "/etc/profile.d/nix.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/nodejs.sh", "comando": "/etc/profile.d/nodejs.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/nvm.sh", "comando": "/etc/profile.d/nvm.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/rbenv.sh", "comando": "/etc/profile.d/rbenv.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/etc/profile.d/ruby.sh", "comando": "/etc/profile.d/ruby.sh"}, {"tipo": "Perfil de shell", "ubicacion": "/root/.bashrc", "comando": "/root/.bashrc"}, {"tipo": "Perfil de shell", "ubicacion": "/root/.profile", "comando": "/root/.profile"}, {"tipo": "Perfil de shell", "ubicacion": "/home/ubuntu/.bashrc", "comando": "/home/ubuntu/.bashrc"}, {"tipo": "Perfil de shell", "ubicacion": "/home/ubuntu/.profile", "comando": "/home/ubuntu/.profile"}]}, "warnings": ["Las firmas nunca se han actualizado: solo se usan las reglas integradas. Ejecuta «protecx update».", "Red: algunos sockets no muestran su proceso: ejecuta con privilegios de administrador"], "stats": {"system": {"segundos": 0.0}, "processes": {"procesos_analizados": 65, "segundos": 1.4}, "network": {"puertos_en_escucha": 3, "conexiones_activas": 15, "segundos": 3.0}, "persistence": {"entradas_de_arranque": 22, "segundos": 0.0}, "files": {"carpetas": ["/tmp/demo"], "archivos_analizados": 2, "segundos": 0.0}}, "inventory_titles": {"listening": "Puertos en escucha", "connections": "Conexiones activas", "persistence": "Arranque automático"}, "scanner_labels": {"system": "Sistema", "processes": "Procesos", "network": "Red", "persistence": "Persistencia", "files": "Archivos"}}</script>
+<script>
+(() => {
+  const data = JSON.parse(document.getElementById('data').textContent);
+  const SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'];
+  const LABELS = { critical: 'Crítico', high: 'Alto', medium: 'Medio', low: 'Bajo', info: 'Info' };
+  const MAX_ROWS = 500;
+
+  // Crea un elemento. Los hijos de texto se insertan como texto, nunca como HTML.
+  const h = (tag, props = {}, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [key, value] of Object.entries(props)) {
+      if (key === 'class') el.className = value;
+      else if (key === 'style') el.style.cssText = value;
+      else if (key.startsWith('on')) el.addEventListener(key.slice(2), value);
+      else if (value === true) el.setAttribute(key, '');
+      else if (value !== false && value != null) el.setAttribute(key, value);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid);
+    return el;
+  };
+  const text = (v) => (typeof v === 'string' ? v : JSON.stringify(v));
+  const when = (iso) => (iso ? new Date(iso).toLocaleString('es-ES') : '—');
+  const sevVar = (sev) => `--c: var(--${sev})`;
+
+  const counts = data.counts;
+  const total = SEVERITIES.reduce((n, s) => n + counts[s], 0);
+  const seconds = Math.max(0, Math.round((new Date(data.finished_at) - new Date(data.started_at)) / 1000));
+
+  function verdict() {
+    if (counts.critical) return [counts.critical === 1 ? 'Se encontró una amenaza crítica' : `Se encontraron ${counts.critical} amenazas críticas`,
+      'Conviene actuar ahora: desconecta el equipo de la red y revisa primero los hallazgos críticos.'];
+    if (counts.high) return ['Hay indicios graves que revisar',
+      'Algo se comporta como lo haría un ataque. Comprueba los hallazgos de gravedad alta antes de seguir usando el equipo con normalidad.'];
+    if (counts.medium) return ['Hay elementos sospechosos',
+      'Es probable que tengan una explicación legítima, pero conviene comprobarlos uno a uno.'];
+    if (total) return ['Sin amenazas conocidas, con avisos menores',
+      'Solo se registraron observaciones de baja gravedad.'];
+    return ['No se encontraron amenazas conocidas',
+      'No hubo coincidencias con las firmas ni conductas sospechosas en lo que se pudo analizar.'];
+  }
+
+  function header() {
+    const items = [
+      ['Equipo', data.host.hostname], ['Sistema', data.host.os], ['Usuario', data.host.user],
+      ['Privilegios', data.host.admin ? 'Administrador' : 'Limitados'],
+      ['Fecha', when(data.started_at)], ['Duración', `${seconds} s`],
+      ['Firmas', `${data.signatures.hashes.toLocaleString('es-ES')} hashes, ${data.signatures.iocs.toLocaleString('es-ES')} IOCs`],
+      ['Última actualización', when(data.signatures.last_update)],
+    ];
+    return h('header', { class: 'head' }, h('h1', {}, 'Informe de análisis ProtecX'),
+      h('dl', { class: 'host' }, items.map(([k, v]) => h('div', {}, h('dt', {}, k), h('dd', {}, v)))));
+  }
+
+  function verdictBlock(onFilter) {
+    const [title, sub] = verdict();
+    const bar = h('div', { class: 'bar', role: 'group', 'aria-label': 'Filtrar hallazgos por gravedad' });
+    if (!total) bar.append(h('div', { class: 'seg-ok' }, 'Sin hallazgos'));
+    for (const sev of SEVERITIES.filter((s) => counts[s])) {
+      const button = h('button', { class: 'seg', type: 'button', 'aria-pressed': 'true', 'data-sev': sev,
+        style: `${sevVar(sev)}; --n: ${counts[sev]}` }, LABELS[sev], h('b', {}, counts[sev]));
+      button.addEventListener('click', () => onFilter(sev));
+      bar.append(button);
+    }
+    return h('section', { class: 'verdict' }, h('h2', {}, title), h('p', {}, sub), bar);
+  }
+
+  function findingItem(f) {
+    const evidence = Object.entries(f.evidence || {}).filter(([, v]) => v !== '' && v != null);
+    const details = (evidence.length || f.recommendation) && h('details', {},
+      h('summary', {}, 'Evidencia y recomendación'),
+      evidence.length && h('dl', { class: 'evidence' }, evidence.map(([k, v]) => [h('dt', {}, k), h('dd', {}, text(v))])),
+      f.recommendation && h('p', { class: 'rec' }, f.recommendation));
+    return h('li', { class: 'finding', 'data-sev': f.severity, style: sevVar(f.severity) },
+      h('div', { class: 'top' }, h('span', { class: 'sev' }, f.severity_label), h('h3', {}, f.title),
+        h('span', { class: 'src' }, data.scanner_labels[f.scanner] || f.scanner)),
+      f.detail && h('p', {}, f.detail), details);
+  }
+
+  function inventory(key, rows) {
+    const columns = Object.keys(rows[0] || {});
+    const shown = rows.slice(0, MAX_ROWS);
+    return h('details', { class: 'inv' },
+      h('summary', {}, data.inventory_titles[key] || key, h('span', {}, `${rows.length} entradas`)),
+      h('div', { class: 'scroll' }, h('table', {},
+        h('thead', {}, h('tr', {}, columns.map((c) => h('th', {}, c)))),
+        h('tbody', {}, shown.map((row) => h('tr', {}, columns.map((c) => h('td', {}, text(row[c] ?? ''))))))),
+        rows.length > MAX_ROWS && h('p', { class: 'none' }, `Se muestran ${MAX_ROWS} de ${rows.length}. El JSON contiene todas.`)));
+  }
+
+  const app = document.getElementById('app');
+  const list = h('ol', { class: 'findings' }, data.findings.map(findingItem));
+  const empty = h('p', { class: 'none', hidden: true }, 'Ningún hallazgo coincide con el filtro.');
+  const active = new Set(SEVERITIES);
+
+  function applyFilter(sev) {
+    // Un clic aísla esa gravedad; otro clic sobre la única activa vuelve a mostrar todas.
+    if (active.size === 1 && active.has(sev)) SEVERITIES.forEach((s) => active.add(s));
+    else { active.clear(); active.add(sev); }
+    const filtering = active.size < SEVERITIES.length;
+    document.querySelectorAll('.seg').forEach((b) => b.setAttribute('aria-pressed', String(!filtering || active.has(b.dataset.sev))));
+    let visible = 0;
+    list.querySelectorAll('.finding').forEach((li) => { const show = active.has(li.dataset.sev); li.hidden = !show; visible += show; });
+    empty.hidden = visible > 0 || !total;
+  }
+
+  app.append(header(), verdictBlock(applyFilter));
+  if (total) app.append(h('section', {}, list, empty));
+
+  if (data.warnings.length) app.append(h('section', { class: 'block' }, h('h2', {}, 'Avisos del análisis'),
+    h('ul', { class: 'warns' }, data.warnings.map((w) => h('li', {}, w)))));
+
+  const inventoryKeys = Object.keys(data.inventory).filter((k) => data.inventory[k].length);
+  if (inventoryKeys.length) app.append(h('section', { class: 'block' }, h('h2', {}, 'Qué hay en el equipo'),
+    inventoryKeys.map((k) => inventory(k, data.inventory[k]))));
+
+  app.append(h('p', { class: 'note' }, 'Un análisis sin hallazgos no garantiza que el equipo esté limpio. ProtecX compara con listas públicas y reglas de comportamiento; no sustituye a un antivirus residente ni analiza en tiempo real.'));
+
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach((d) => { d.open = true; }));
+})();
+</script>
+</body>
+</html>
